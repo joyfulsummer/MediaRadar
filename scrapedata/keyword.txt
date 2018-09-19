@@ -1,0 +1,20 @@
+Alcohol
+Kid and Baby
+Beauty
+Cloth
+Drug
+Education
+Electronics
+Food
+Furniture
+Garden
+Gaming
+Grocery
+Home
+Medical
+Music
+Pet
+Sport
+Technology
+Travel
+Vehicles
