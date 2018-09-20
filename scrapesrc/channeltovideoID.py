@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/Users/beibei/Documents/insight/project/youtubeAPI/youtube_tutorial")
+sys.path.append("path to playlist")
 from playlist import youtube_search
 import json
 
