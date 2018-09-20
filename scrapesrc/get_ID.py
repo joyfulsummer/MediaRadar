@@ -71,7 +71,7 @@ def grab_playlist(id, token=None):
     return token
     
 def grab_video(id, token = None):
-    DEVELOPER_KEY = "AIzaSyCpXPYyDtSTCHcGM_Gy3ZIkDLObj_m0PJ4"
+    DEVELOPER_KEY = "API KEYS"
     YOUTUBE_API_SERVICE_NAME = "youtube"
     YOUTUBE_API_VERSION = "v3"
     youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
