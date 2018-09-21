@@ -9,10 +9,10 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')  
 
-DEVELOPER_KEY = "AIzaSyDMn4dYXSTz7f9SdHmn1qgfGtsXzrDNA_0"
+DEVELOPER_KEY = "APIkey"
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
-pafy.set_api_key("AIzaSyDMn4dYXSTz7f9SdHmn1qgfGtsXzrDNA_0")
+pafy.set_api_key("APIkey")
 
 def add_data_csv(keyword,channelID, vID,title,description,author,published,viewcount, duration, likes, dislikes,rating,category,comments):
 	data = [keyword,channelID, vID,title,description,author,published,viewcount, duration, likes, dislikes,rating,category,comments]
