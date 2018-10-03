@@ -10,7 +10,7 @@ from elasticsearch import Elasticsearch
 def index():
    return render_template("cesa2.html")
 
-es=Elasticsearch(["http://52.21.6.9:9200"])
+es=Elasticsearch(["your host ip"])
 
 @app.route('/output')
 def cesareans_output():
