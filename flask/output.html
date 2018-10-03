@@ -66,12 +66,17 @@
 
       <table class="table table-hover">
       <tr><th>Channel ID</th><th>Total views of related videos</th><th>Examples</th></tr>
+      <!--<tr><th>massivejoes</th><th>931,751</th><th>https://www.youtube.com/watch?v=SQA1aTYH3N8&t=39s</th></tr>
+      <tr><th>AlphaMconsulting</th><th>496,822</th><th>https://www.youtube.com/results?search_query=1TQt4acn5PI</th></tr>
+      <tr><th>UCuejlFSYOTCo7SDnGPfThhw</th><th>214,788</th><th>https://www.youtube.com/watch?v=Nnb2AH3mOwU&t=20s</th></tr> -->
       {% for birth in births %}
       <tr><td>{{ birth['Channel ID'] }}</td><td>{{ birth['Total views of related videos']}}</td><td> {{ birth['Examples'] }}</td></tr>
+      
       {% endfor %}
       </table>
 
      </div><!-- /.container -->
+     </div>
 
     <!-- <div class="container">
       <div class="starter-template">
