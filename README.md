@@ -1,7 +1,6 @@
 # MediaRadar
-Insight Data Engineering Project
 # Project Idea
-This data product empowers context market by matching Youtube bloggers with product advertisement through Elastic Search.
+This data product I developed in Insight empowers context market by matching Youtube bloggers with product advertisement through Elastic Search.
 # Use Case
 There are too much advertisement now, no matter people are walking on the street or surfing the internet. One good question is how much your advertising is trusted? One efficient way to build trust between product advertisement and audience is to collaborate with Youtube bloggers, and ask them to create videos and present the product in their channel. Then the question is which bloggers to choose? Instead of spending days searching on Youtube, companies can just use my product, Media Radar!
 
