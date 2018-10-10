@@ -12,7 +12,7 @@ from oauth2client.tools import argparser
 @app.route('/')
 @app.route('/index')
 def index():
-   return render_template("cesa2.html")
+   return render_template("input.html")
 
 # create a Elasticsearch python client, input your list of ES host IP in []
 es = Elasticsearch([your ES host IP])
