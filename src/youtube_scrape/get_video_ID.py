@@ -55,6 +55,9 @@ with open(filename,"r") as input_file:
 # telling me the total number of videos 
 print str(len(video_dict["youID"]))
 
+# store video and channel ID in a json file
+filename2 = "video_ID.json"
+
 # save information to json file
-with open(keyword+'_1.json', 'w') as outfile:
+with open(filename2, 'w') as outfile:
     json.dump(video_dict, outfile)
