@@ -1,3 +1,4 @@
 # MediaRadar
 Insight Data Engineering Project
-This project aims to recommend Youtube bloggers to advertise for a product given a certain prodcut description.
+# Project Idea
+This data product empowers context market by matching Youtube bloggers with product advertisement through Elasticsearch.
