@@ -4,8 +4,8 @@ sys.path.append("/home/ubuntu")
 from youtube_videos import youtube_search
 import json
 
-# store video ID, channel ID, video type (keyword for search), and index of video in video_dict dictionary.
-video_dict = {'youID': [],'channelID': [], 'type': [],'index': []}
+# store video ID, channel ID, video type (keyword for search), and index of video in video_info list.
+video_info = []
 #a list of 
 video_ID = []
 
@@ -21,13 +21,15 @@ def grab_videos(keyword, token):
     videos = res[1]
 
     for vid in videos:
-# save the video ID, channel ID, type, and index in the dictionary
-          video_dict['youID'].append(vid['id']['videoId'])
-          video_dict['type'].append(keyword)
-          video_dict['channelID'].append(vid['snippet']['channelId'])
+	  video_dict = {}
+# save each video ID, channel ID, type, and index in the dictionary
+          video_dict['youID']=vid['id']['videoId']
+          video_dict['type']=keyword
+          video_dict['channelID']=vid['snippet']['channelId']
           index = len(video_dict['youID'])
-          video_dict['index'].append(index)
           video_ID.append(vid['id']['videoId'])
+# append each video information to list
+	  video_info.append(video_dict)
           
 # return page token, in order to retrieve next token
     return token
@@ -60,4 +62,4 @@ filename2 = "video_ID.json"
 
 # save information to json file
 with open(filename2, 'w') as outfile:
-    json.dump(video_dict, outfile)
+    json.dump(video_info, outfile)
