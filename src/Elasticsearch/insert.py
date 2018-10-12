@@ -41,7 +41,7 @@ es = Elasticsearch(["your Elasticsearch IP"])
 set_mapping(es)
 
 # file contains all video information scraped and cleaned previously
-filename = "youtubedata.json"
+filename = "video_processed.json"
 
 with open(filename,'r') as input_file:
 # variable to count how many items are processed, how many items are inserted into ES
