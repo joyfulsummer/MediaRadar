@@ -13,5 +13,7 @@ The front end receives keywords of a product like the product brand, type, and k
 Data first goes from Youtube API to amazon S3 bucket, then I process data using Spark, and insert data into Elastic Search distributed database. The Elastic Search cluster is composed of four T2-large instance on Amazon cloud. The newest version (6.4.2) is installed. 
 
 Flask in the front end website. It receives product information from customer, and use Elastic Search to search for 1000 related videos with matched keywords. Elastic Search return results includes video ID, channel ID, number of views, and similarity score. Flask will display the list of recommended channel ID with their views/scores/example video in the website. 
+
+![alt text](https://github.com/joyfulsummer/MediaRadar/blob/master/img/pipeline.png)
 # Data Challenge
 Inserting/Indexing into Elastic Search is originally very slow (15 hours for 100 GB). I improved the slow indexing speed by benchmarking Elastic Search performance, and found the optimal bulk request size. I also turned off refreshing when indexing. The optimal heap size on the cluster is also investigated. An optimal set of heapsize and bulk request size is found by parametric study. After optimizing, the cluster is stable and fast in indexing 100 GB data (2.5 hours). 
