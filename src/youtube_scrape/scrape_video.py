@@ -93,7 +93,9 @@ def getID(videoId=None):
  # if last page, do not continue
 						except KeyError, e:
 							further = False
-
+			
+                        video.title = ' '.join(video.title.split(","))
+			video.description = ' '.join(video.description.split(",")
 # Adding the full data to CSV
 			add_data(keyword, videoId,video.title,video.description,video.author,video.published,video.viewcount, video.duration, video.likes, video.dislikes,video.rating,video.category,comments)
 		
