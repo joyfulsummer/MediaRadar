@@ -8,7 +8,7 @@ With Media Radar, the brand, type, and keyword of a product is entered, and Medi
 # Algorithm
 I first built my own database by collecting one million Youtube video information using 3000 keywords. The keywords come from multiple sources like the Wiki page, Amazon, Macy’s, and Youtube 8M dataset (https://research.google.com/youtube8m/). The keywords are used to search for videos by calling Youtube API. The video information that I collected includes video title, description, comments, number of views, likes/dislikes, duration, author name, channel ID, etc. 
 
-The front end receives keywords of a product like the product brand, type, and keyword. The database returns a list of 1000 videos which matches the description of the product. Each video will map to a channel ID. I sort the channel ID according to two metrics: popularity (total number of views of related videos) and similarity (average similarity score returned by database). 
+The front end receives keywords of a product like the product brand, type, and keyword. The database returns a list of videos which matches the description of the product. Each video will map to a channel ID. I sort the channel ID according to two metrics: popularity (total number of views of related videos) and similarity (average similarity score returned by database). 
 # Data Pipeline
 Data first goes from Youtube API to amazon S3 bucket, then I process data using Spark, and insert data into Elastic Search distributed database. The Elastic Search cluster is composed of four T2-large instance on Amazon cloud. The newest version (6.4.2) is installed. 
 
