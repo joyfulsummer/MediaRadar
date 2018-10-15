@@ -16,4 +16,4 @@ Flask in the front end website. It receives product information from customer, a
 
 ![alt text](https://github.com/joyfulsummer/MediaRadar/blob/master/img/pipeline.png)
 # Data Challenge
-Inserting/Indexing into Elastic Search is originally very slow (15 hours for 100 GB). I improved the slow indexing speed by benchmarking Elastic Search performance, and found the optimal bulk request size. I also turned off refreshing when indexing. The optimal heap size on the cluster is also investigated. An optimal set of heapsize and bulk request size is found by parametric study. After optimizing, the cluster is stable and fast in indexing 100 GB data (2.5 hours). 
+Inserting/Indexing into Elastic Search is originally very slow. I improved the slow indexing speed by benchmarking Elastic Search performance, and found the optimal bulk request size. I also turned off refreshing when indexing. The optimal heap size on the cluster is also investigated. An optimal set of heapsize and bulk request size is found by parametric study. After optimizing, the cluster is stable and fast in indexing. 
